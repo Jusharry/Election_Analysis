@@ -51,7 +51,14 @@ for candidate_name in candidate_votes :
         winning_count = votes 
         winning_percentage = vote_percentage
         winning_candidate = candidate_name
-print (f'---------------------------\nThe candidate {winning_candidate} has won the election with {winning_count} votes and by {winning_percentage:.1f}% of the votes.')
+
+winning_candidate_summary = (
+    f"-------------------------------\n"
+    f"Winner : {winning_candidate}\n"
+    f"Winning Vote Count : {winning_count}\n"
+    f"Winning Percentage : {winning_percentage:.1f}\n"
+    f"--------------------------------\n")
+print (winning_candidate_summary)
 
 #perform analysis
 # #pseudocode start 
