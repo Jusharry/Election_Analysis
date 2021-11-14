@@ -39,32 +39,55 @@ with open(file_to_load,) as election_data:
             candidate_votes[candidate_name] = 0
         candidate_votes[candidate_name] += 1
 
-#Print the total votes 
-print(candidate_votes)
+#using the open() function with 'w' will write data to the file
+with open(file_to_save,'w') as text_file:
+    #Print final vote count 
+    election_results = (
+        f"\n Election Results\n"
+        f"-------------------------\n"
+        f"Total Votes ; {total_votes:,}\n"
+        f"-------------------------\n")
+    print(election_results, end = "")
 
-for candidate_name in candidate_votes :
-    votes = candidate_votes[candidate_name]
-    vote_percentage = float(votes) / float(total_votes) *100
-    print (f"\n{candidate_name} received {votes} ({vote_percentage:.1f})% of the total vote.") 
-    #Determine the winning votes and candidate
-    if (votes > winning_count) and (vote_percentage > winning_percentage) :
-        winning_count = votes 
-        winning_percentage = vote_percentage
-        winning_candidate = candidate_name
+    #save the results to the text file 
+    text_file.write(election_results)
 
-winning_candidate_summary = (
-    f"-------------------------------\n"
-    f"Winner : {winning_candidate}\n"
-    f"Winning Vote Count : {winning_count}\n"
-    f"Winning Percentage : {winning_percentage:.1f}\n"
-    f"--------------------------------\n")
-print (winning_candidate_summary)
+    #Print the total votes 
+    #print(candidate_votes)
 
-#perform analysis
-# #pseudocode start 
-# 1. Count total number of votes cast 
-# 2. Make a complete list of candidates who received votes 
-# 3. Count total number of votes that each candidate received 
-# 4. Calculate the percentage of votes that each candidate won 
-# 5. Determine the election winner based on popular vote
+    for candidate_name in candidate_votes :
+        votes = candidate_votes[candidate_name]
+        vote_percentage = float(votes) / float(total_votes) *100
+        candidate_results = (f"\n{candidate_name} received {votes} ({vote_percentage:.1f})% of the total vote.\n") 
+        print(candidate_results)
+        text_file.write(candidate_results)
+
+    
+        #Determine the winning votes and candidate
+        if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes 
+            winning_percentage = vote_percentage
+            winning_candidate = candidate_name
+
+    winning_candidate_summary = (
+        f"-------------------------------\n"
+        f"Winner : {winning_candidate}\n"
+        f"Winning Vote Count : {winning_count}\n"
+        f"Winning Percentage : {winning_percentage:.1f}\n"
+        f"--------------------------------\n")
+    
+    print (winning_candidate_summary)
+    text_file.write(winning_candidate_summary)
+
+
+
+
+
+    #perform analysis
+    # #pseudocode start 
+    # 1. Count total number of votes cast |/
+    # 2. Make a complete list of candidates who received votes |/
+    # 3. Count total number of votes that each candidate received |/ 
+    # 4. Calculate the percentage of votes that each candidate won |/
+    # 5. Determine the election winner based on popular vote |/
 
