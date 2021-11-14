@@ -58,7 +58,7 @@ with open(file_to_save,'w') as text_file:
     for candidate_name in candidate_votes :
         votes = candidate_votes[candidate_name]
         vote_percentage = float(votes) / float(total_votes) *100
-        candidate_results = (f"\n{candidate_name} received {votes} ({vote_percentage:.1f})% of the total vote.\n") 
+        candidate_results = (f"\n{candidate_name} received {votes} votes ({vote_percentage:.1f})% of the total vote.\n") 
         print(candidate_results)
         text_file.write(candidate_results)
 
