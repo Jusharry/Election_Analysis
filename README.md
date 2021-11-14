@@ -11,15 +11,20 @@ A Colorado Board of Elections employee has given you the following tasks to comp
 
 ## Resources 
 -Data Source : election_results.csv
+
 -Software : Python 3.8.2 , VS Code 1.62.1
 
 ## Summary 
 The analysis of the election show that there were 3 candidates namely :
+
 -Charles Casper Stockham
+
 -Diana DeGette
+
 -Raymon Anthony Doane
 
 The results were :
+
 Charles Casper Stockham received 85213 votes (23.0)% of the total vote.
 
 Diana DeGette received 272892 votes (73.8)% of the total vote.
@@ -27,6 +32,7 @@ Diana DeGette received 272892 votes (73.8)% of the total vote.
 Raymon Anthony Doane received 11606 votes (3.1)% of the total vote.
 
 The winner of the election by popular vote was :
+
 Diana DeGette 
 
 ## Challenge Overview 
