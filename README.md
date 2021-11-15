@@ -32,31 +32,13 @@ The winner of the election by popular vote was :
 
 ## Code references
 
-[Variable Assignment] (https://github.com/Jusharry/Election_Analysis/blob/61b2dc3130a41ec22b8119718795099c336fecb0/Resources/%20variable_assignment.png)
+[Variable Assignment](https://github.com/Jusharry/Election_Analysis/blob/61b2dc3130a41ec22b8119718795099c336fecb0/Resources/%20variable_assignment.png)
 
-[County Votes] (https://github.com/Jusharry/Election_Analysis/blob/61b2dc3130a41ec22b8119718795099c336fecb0/Resources/county_votes%20screenshot.png)
+[County Votes](https://github.com/Jusharry/Election_Analysis/blob/61b2dc3130a41ec22b8119718795099c336fecb0/Resources/county_votes%20screenshot.png)
 
-[Candidate Votes]
+[Candidate Votes](https://github.com/Jusharry/Election_Analysis/blob/8bd6b7165eca177a727e340308984ba4c323bb86/Resources/winning_candidate.png)
 
 
 
 ## Summary 
-The analysis of the election show that there were 3 candidates namely :
 
--Charles Casper Stockham
-
--Diana DeGette
-
--Raymon Anthony Doane
-
-The results were :
-
-
-The winner of the election by popular vote was :
-
-Diana DeGette 
-
-## Challenge Overview 
-
-
-## Challenge Summary
