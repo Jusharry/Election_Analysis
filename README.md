@@ -44,18 +44,25 @@ The winner of the election by popular vote was :
 While this script has been used to return results for this election , I firmly believe that the scope is much broader . I can show that the script can be modified to capture data for a result at the state or country level where the counties can be measured for their  individual contributions to the candidates which can further be used to plan rallies in the strongest states and reveal which areas need extra attention.
 
 -add list of states
+
 states = []
+
 county_list = []
+
 county_votes = {}
 
  - use total votes to determine voter turnout 
+
     for row  in reader :
 
-    total_votes= total_votes + 1 
-    states_turnout = total_votes
+        total_votes= total_votes + 1 
 
-    -add list of counties to appropriate state
+        states_turnout = total_votes
+
+-add list of counties to appropriate state
+
     if county_list not in states:
+
         states.append(county_list)
 
 
