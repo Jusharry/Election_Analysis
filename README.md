@@ -7,7 +7,7 @@ The purpose of this election audit analysis was to determine and return the outc
 
 * Total number of votes cast : 369,711
 
-### Number and percentage of votes by county :
+#### Number and percentage of votes by county :
 
 * Arapahoe - 24,801 (6.7%)
 
@@ -17,7 +17,7 @@ The purpose of this election audit analysis was to determine and return the outc
 
 * Denver county had the largest number of votes
 
-### Number and percentage of votes per candidate :
+#### Number and percentage of votes per candidate :
 
 * Charles Casper Stockham received 85,213 votes (23.0)% of the total vote.
 
@@ -27,11 +27,16 @@ The purpose of this election audit analysis was to determine and return the outc
 
 The winner of the election by popular vote was :
 
-Diana DeGette  with 272,892 votes and 73.8% of the votes cast
+  Diana DeGette  with 272,892 votes and 73.8% of the votes cast
 
 
-## Resources 
--[Data Source :](https://github.com/Jusharry/Election_Analysis/blob/656200b36e13ee478a0fd84ae21d2784d58e972e/Resources/election_results.csv)
+## Code references
+
+[Variable Assignment] (https://github.com/Jusharry/Election_Analysis/blob/61b2dc3130a41ec22b8119718795099c336fecb0/Resources/%20variable_assignment.png)
+
+[County Votes] (https://github.com/Jusharry/Election_Analysis/blob/61b2dc3130a41ec22b8119718795099c336fecb0/Resources/county_votes%20screenshot.png)
+
+[Candidate Votes]
 
 
 
