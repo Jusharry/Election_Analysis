@@ -8,7 +8,7 @@ import os
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
 # Add a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+file_to_save = os.path.join("analysis", "election_results.txt")
 
 # Initialize a total vote counter.
 total_votes = 0
@@ -87,8 +87,8 @@ with open(file_to_save, "w") as txt_file:
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
         f"-------------------------\n\n"
-        f"County Votes:\n"
-        f"-------------------------\n")
+        f"County Votes:\n")
+
     print(election_results, end="")
 
     txt_file.write(election_results)
@@ -101,7 +101,7 @@ with open(file_to_save, "w") as txt_file:
         # 6c: Calculate the percentage of votes for the county.
         votes_percentage = float(votes_count) / float(total_votes) *100
         county_results = (
-            f"\n{county_name} had {votes_count} votes ({votes_percentage:.1f})% of the counties votes \n")
+            f"{county_name}: {votes_percentage:.1f}% ({votes_count:2,})\n")
 
          # 6d: Print the county results to the terminal.
         print(county_results)
@@ -112,7 +112,9 @@ with open(file_to_save, "w") as txt_file:
         if (votes_count > lrg_num_voters) and (votes_percentage > lrg_percentage_voters):
             lrg_num_voters = votes_count
             largest_county = county_name
-            county_winner = (f"\n{largest_county} had the  largest county voter turnout  with {lrg_num_voters} votes.\n")
+            county_winner = (f"\n\n-------------------------\n"
+            f"Largest county Turnout: {largest_county}\n"
+            f"-------------------------\n")
     #7: Print the county with the largest turnout to the terminal.
 
     print(county_winner)
@@ -120,10 +122,10 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(county_winner)
 
     # Save the final candidate vote count to the text file.
-    print(f"------------------------------\n\n"
-        f"Candidate Votes:\n"
-        f"------------------------------\n")
-        
+
+
+
+
     for candidate_name in candidate_votes:
 
         # Retrieve vote count and percentage
