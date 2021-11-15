@@ -1,18 +1,39 @@
 # Election_Analysis
 
 ## Project Overview
-A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election 
+The purpose of this election audit analysis was to determine and return the outcomes of a recent congressional election with focus on the largest voter turnouts by county and the overall winner of the election.
 
-1. Count total number of votes cast 
-2. Make a complete list of candidates who received votes 
-3. Count total number of votes that each candidate received 
-4. Calculate the percentage of votes that each candidate won 
-5. Determine the election winner based on popular vote 
+## Election-Audit Results
+
+* Total number of votes cast : 369,711
+
+### Number and percentage of votes by county :
+
+* Arapahoe - 24,801 (6.7%)
+
+* Denver - 306,055(82.8%)
+
+* Jefferson - 38,855(10.5%)
+
+* Denver county had the largest number of votes
+
+### Number and percentage of votes per candidate :
+
+* Charles Casper Stockham received 85,213 votes (23.0)% of the total vote.
+
+* Diana DeGette received 272,892 votes (73.8)% of the total vote.
+
+* Raymon Anthony Doane received 11,606 votes (3.1)% of the total vote.
+
+The winner of the election by popular vote was :
+
+Diana DeGette  with 272,892 votes and 73.8% of the votes cast
+
 
 ## Resources 
--Data Source : election_results.csv
+-[Data Source :](https://github.com/Jusharry/Election_Analysis/blob/656200b36e13ee478a0fd84ae21d2784d58e972e/Resources/election_results.csv)
 
--Software : Python 3.8.2 , VS Code 1.62.1
+
 
 ## Summary 
 The analysis of the election show that there were 3 candidates namely :
@@ -25,11 +46,6 @@ The analysis of the election show that there were 3 candidates namely :
 
 The results were :
 
-Charles Casper Stockham received 85213 votes (23.0)% of the total vote.
-
-Diana DeGette received 272892 votes (73.8)% of the total vote.
-
-Raymon Anthony Doane received 11606 votes (3.1)% of the total vote.
 
 The winner of the election by popular vote was :
 
